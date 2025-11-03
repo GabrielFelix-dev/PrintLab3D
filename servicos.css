@@ -1,9 +1,10 @@
-body { 
-  margin: 0; /* Remove a margem padrão da página */
-  font-family: Inter, Poppins, Arial; /* Define a ordem de prioridade das fontes */
-  background: #f6f7fb; /* Cor de fundo geral da página */
-  color: #111; /* Define a cor principal do texto */
+body {
+  font-family: Inter, "Poppins", Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
 }
+
 
 :root {
     --bg: #f8f9fb;
@@ -15,7 +16,11 @@ body {
     --card-shadow: 0 6px 20px rgba(15,15,20,0.06);
     --maxw: 1400px;
 }
-
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 /*-------------------*/
 /* HEADER */
 header {
@@ -52,7 +57,7 @@ nav ul {
   display: flex; /* Deixa os itens do menu lado a lado */
   gap: 65px; /* Espaço entre cada item */
   align-items: center; /* Alinha verticalmente ao centro */
-  margin-top: 2%; /* Ajusta a horizontal dos itens */
+  margin-top: 4%; /* Ajusta a horizontal dos itens */
 }
 
 nav a {
@@ -94,26 +99,6 @@ nav a:hover .underline {
   margin-left: 10%;
 }
 
-.carrinho-btn {
-  width: 24px;
-  height: 22px;
-  border-radius: 50%;
-  border: 2px solid var(--accent1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  background: #fff;
-  transition: all 0.25s ease;
-}
-
-
-.carrinho-btn img {
-  width: 60%;
-  height: 60%;
-  object-fit: contain;
-}
-
 .container {
   display: flex;
   align-items: center;
@@ -128,8 +113,8 @@ nav a:hover .underline {
   
 }
 
-/* Botão Carrinho */
-.carrinho-btn {
+/* Botão user */
+.user-btn {
   width: 52px;
   height: 35px;
   border-radius: 50%;
@@ -143,11 +128,11 @@ nav a:hover .underline {
 }
 
 
-.carrinho-btn img {
+.user-btn img {
   width: 80%;
   height: 80%;
   object-fit: contain;
-  border-radius: 50%;
+  border-radius: 0%;
 }
 /*----------------*/
 
