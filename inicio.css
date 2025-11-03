@@ -101,26 +101,6 @@ nav a:hover .underline {
   margin-left: 10%;
 }
 
-.carrinho-btn {
-  width: 24px;
-  height: 22px;
-  border-radius: 50%;
-  border: 2px solid var(--accent1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  background: #fff;
-  transition: all 0.25s ease;
-}
-
-
-.carrinho-btn img {
-  width: 60%;
-  height: 60%;
-  object-fit: contain;
-}
-
 .container {
   display: flex;
   align-items: center;
@@ -135,8 +115,8 @@ nav a:hover .underline {
   
 }
 
-/* Botão Carrinho */
-.carrinho-btn {
+/* Botão user */
+.user-btn {
   width: 52px;
   height: 35px;
   border-radius: 50%;
@@ -150,15 +130,15 @@ nav a:hover .underline {
 }
 
 
-.carrinho-btn img {
+.user-btn img {
   width: 80%;
   height: 80%;
   object-fit: contain;
-  border-radius: 50%;
+  border-radius: 0%;
 }
 
 /*-------------------*/
-    /* Hero */
+  /* Hero */
 .hero {
   max-width: var(--maxw);
   margin: 28px auto 10px;
