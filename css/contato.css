@@ -1,0 +1,201 @@
+
+body {
+  font-family: Inter, "Poppins", Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+}
+:root {
+    --bg: #f8f9fb;
+    --text: #111;
+    --muted: #666;
+    --accent1: #007bff;
+    --accent2: #8a2be2;
+    --gradient: linear-gradient(90deg, var(--accent1), var(--accent2));
+    --card-shadow: 0 6px 20px rgba(15,15,20,0.06);
+    --maxw: 1400px;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/*-------------------*/
+/* HEADER */
+header {
+  position: sticky; /* Faz o header "grudar" no topo ao rolar a página */
+  top: 0; /* Define que ele fica preso no topo da janela */
+  z-index: 120; /* Mantém o header acima de outros elementos */
+  background: #fff; /* Define o fundo branco */
+  box-shadow: 0 2px 12px rgba(12,12,15,0.06); /* Adiciona sombra suave abaixo */
+}
+
+.container {
+  max-width: var(--maxw); /* Largura máxima definida por variável */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  padding: 10px 5px; /* Espaçamento interno: vertical e horizontal */
+  display: flex; /* Organiza itens lado a lado (flexbox) */
+  align-items: center; /* Alinha verticalmente ao centro */
+  /* justify-content: space-between;  Espaço entre os elementos */
+}
+
+.logo-space {
+  width: 370px; /* Largura reservada para o logo */
+  height: 70px; /* Altura do espaço */
+  display: flex; /* Permite alinhar melhor o logo dentro */
+  align-items: center; /* Centraliza verticalmente a imagem */
+}
+
+.logo-space img {
+  height: 80px; /* Ajusta o tamanho do logo */
+  display: block; /* Remove espaços extras abaixo da imagem */
+}
+
+nav ul {
+  list-style: none; /* Remove as bolinhas padrão da lista */
+  display: flex; /* Deixa os itens do menu lado a lado */
+  gap: 65px; /* Espaço entre cada item */
+  align-items: center; /* Alinha verticalmente ao centro */
+  margin-top: 4%; /* Ajusta a horizontal dos itens */
+}
+
+nav a {
+  color: var(--text); /* Cor do texto baseada em variável */
+  text-decoration: none; /* Remove sublinhado padrão */
+  font-weight: 600; /* Espessura da fonte (semi-negrito) */
+  padding: 8px 6px; /* Espaçamento interno para clique confortável */
+  border-radius: 6px; /* Bordas levemente arredondadas */
+  transition: all .18s ease; /* Suaviza as animações ao passar o mouse */
+  font-size: 15px; /* Tamanho da fonte */
+}
+
+nav a:hover { 
+  color: var(--accent2); /* Muda a cor do texto no hover */
+}
+
+nav a .underline {
+  display: block; /* Permite tratar como bloco para animar largura */
+  height: 2px; /* Espessura da linha */
+  width: 0; /* Começa invisível */
+  background: var(--gradient); /* Usa o gradiente da marca */
+  border-radius: 2px; /* Bordas arredondadas */
+  transition: width .25s ease; /* Animação suave ao expandir */
+  margin-top: 6px; /* Espaço entre o texto e a linha */
+}
+
+nav a:hover .underline { 
+  width: 100%; /* Linha cresce ao passar o mouse */
+}
+
+.login-btn {
+  background: var(--gradient); /* Botão com gradiente */
+  color: #fff; /* Texto branco */
+  padding: 5px 16px; /* Espaçamento interno confortável */
+  border-radius: 8px; /* Bordas arredondadas */
+  text-decoration: none; /* Remove sublinhado */
+  font-weight: 700; /* Texto mais forte para destacar */
+  margin-top: -3.7%;
+  margin-left: 10%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  /*justify-content: space-between; /* Agora distribui os blocos */
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  margin-left: 15%;
+  
+}
+
+/* Botão user */
+.user-btn {
+  width: 52px;
+  height: 35px;
+  border-radius: 50%;
+  border: 3px solid var(--accent1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: #fff;
+  transition: all 0.25s ease;
+}
+
+
+.user-btn img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  border-radius: 0%;
+}
+/*------------------*/
+
+main { 
+  max-width: 1100px; /* Define a largura máxima da área principal */
+  margin: 24px auto; /* Centraliza e adiciona espaçamento vertical */
+  padding: 24px; /* Espaçamento interno do conteúdo principal */
+}
+
+h1 { 
+  margin: 0 0 12px; /* Remove margem superior e adiciona espaçamento inferior */
+}
+
+.contact-grid { 
+  display: grid; /* Usa o layout em grade */
+  grid-template-columns: 320px 1fr; /* Define duas colunas: uma fixa (320px) e outra flexível */
+  gap: 24px; /* Espaçamento entre as colunas */
+  align-items: start; /* Alinha os elementos ao topo da linha da grade */
+}
+
+.card { 
+  background: #fff; /* Fundo branco para os cartões */
+  padding: 18px; /* Espaçamento interno */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 8px 20px rgba(12,14,20,0.04); /* Sombra suave ao redor dos cartões */
+}
+
+.qrcode { 
+  width: 100%; /* Faz a imagem do QR Code ocupar toda a largura disponível */
+  height: auto; /* Mantém a proporção da imagem */
+  display: block; /* Garante que a imagem se comporte como um bloco */
+  margin: 0 auto 8px; /* Centraliza e adiciona espaçamento inferior */
+}
+
+.info p { 
+  margin: 6px 0; /* Define espaçamento vertical entre parágrafos */
+  color: #333; /* Define cor escura, mas não totalmente preta */
+}
+
+.form input,
+.form textarea { 
+  width: 100%; /* Campos ocupam toda a largura disponível */
+  padding: 10px; /* Adiciona espaçamento interno */
+  border: 1px solid #e6e9f0; /* Define borda leve e clara */
+  border-radius: 8px; /* Bordas arredondadas */
+  font-size: 14px; /* Tamanho de fonte padrão para os campos */
+}
+
+.form textarea { 
+  height: 120px; /* Altura padrão do campo de texto */
+  resize: vertical; /* Permite redimensionar apenas na vertical */
+}
+
+.btn { 
+  background: linear-gradient(90deg, #007bff, #8a2be2); /* Cria um gradiente azul → roxo */
+  color: #fff; /* Texto branco */
+  padding: 10px 14px; /* Espaçamento interno do botão */
+  border-radius: 8px; /* Bordas arredondadas */
+  border: none; /* Remove bordas padrão */
+  font-weight: 700; /* Texto em negrito */
+}
+
+@media (max-width: 980px) { 
+  .contact-grid { 
+    grid-template-columns: 1fr; /* Exibe apenas uma coluna em telas menores (celulares/tablets) */
+  }
+}
