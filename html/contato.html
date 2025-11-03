@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fale Conosco — PrintLab3D</title>
+        <link rel="stylesheet" href="css//contato.css">
+    </head>
+    <body>
+            
+        <!--MENU-->
+        <header> 
+            <div class="container">
+                <div class="logo-space">
+                    <img src="IMG/logoPrint.png" alt="Logo PrintLab3D">
+                </div>
+
+                <nav>
+                    <ul> 
+                        <li><a href="index.html">Início<span class="underline"></span></a></li>
+                        <li><a href="projetos.html" target="_self">Projetos<span class="underline"></span></a></li>
+                        <li><a href="servicos.html" target="_self">Serviços<span class="underline"></span></a></li>
+                        <li><a href="equipe.html" target="_self">Equipe<span class="underline"></span></a></li>
+                        <li><a href="contato.html" target="_self">Contato<span class="underline"></span></a></li>
+                    </ul>
+                    
+                </nav>
+
+                <div class="actions">
+                    <a class="login-btn" href="" target="_self">Login</a>
+                    <a class="user-btn" href="" target="_self">
+                        <img src="IMG/user.png" alt="user de compras">
+                    </a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <h1>Fale Conosco</h1>
+            <p style="color:#666">Deixe seu contato ou use o QR code para acessar nosso canal direto.</p>
+
+            <div class="contact-grid">
+                <div class="card">
+                    <img src="IMG/qrcode.jpg" alt="QR Code" class="qrcode" style="max-width:260px">
+                    <div class="info">
+                        <p><strong>Telefone:</strong> +55 (83) 98647-3373</p>
+                        <p><strong>Email:</strong> printlabpb@gmail.com</p>
+                        <p style="color:#666">Endereço • Campina Grande- PB
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Envie sua solicitação</h3>
+                    <form class="form" action="#" method="post" onsubmit="alert('solicitação Feita, aguarde entrarmos em contato!'); return false;">
+                        <div style="display:flex;gap:12px;margin-bottom:12px">
+                            <input name="name" placeholder="Seu nome" required>
+                            <input name="email" placeholder="Seu email" required>
+                        </div>
+                        <input name="subject" placeholder="Assunto" style="margin-bottom:12px">
+                        <textarea name="message" placeholder="Descreva seu projeto (tamanho, material, prazo)"></textarea>
+                        <div style="margin-top:12px;display:flex;gap:10px;align-items:center">
+                            <button class="btn" type="submit">Enviar</button>
+                            <small style="color:#666">Resposta em até 48h</small>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
