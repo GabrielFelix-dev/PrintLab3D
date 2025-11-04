@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Personalizado - PrintLab3D</title>
+    <link rel="stylesheet" href="../css/inicio.css"> 
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    
+    <header> 
+        <div class="container">
+            <div class="logo-space">
+                <img src="../IMG/logoPrint.png" alt="Logo PrintLab3D">
+            </div>
+
+            <nav>
+                <ul> 
+                    <li><a href="index.html">Início<span class="underline"></span></a></li>
+                    <li><a href="projetos.html" target="_self">Projetos<span class="underline"></span></a></li>
+                    <li><a href="servicos.html" target="_self">Serviços<span class="underline"></span></a></li>
+                    <li><a href="equipe.html" target="_self">Equipe<span class="underline"></span></a></li>
+                    <li><a href="contato.html" target="_self">Contato<span class="underline"></span></a></li>
+                </ul>
+            </nav>
+
+            <div class="actions">
+                <a class="login-btn" href="login.html">Login</a>
+                <a class="user-btn" href="">
+                    <img src="../IMG/user.png" alt="Área do Usuário">
+                </a>
+            </div>
+        </div>
+    </header>
+    
+    <main class="login-page-main">
+        <div class="login-card">
+            <div class="login-image-placeholder">
+                <img src="../IMG/logoPrint.png" alt="User Icon" class="login-icon">
+                </div>
+
+            <form id="loginFormCustom">
+                <div class="form-group">
+                    <label for="username_email">Nome de usuário ou e-mail <span class="required">*</span></label>
+                    <input type="text" id="username_email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password_custom">Senha <span class="required">*</span></label>
+                    <div class="password-input-wrapper">
+                        <input type="password" id="password_custom" required>
+                        <span class="toggle-password" onclick="togglePasswordVisibility()">
+                            <i class="fas fa-eye"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="remember_me">
+                    <label for="remember_me">Lembre-me</label>
+                </div>
+
+                <button type="submit" class="btn-access">Acessar</button>
+                <p id="mensagemErroCustom" class="error-message"></p>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
