@@ -1,0 +1,182 @@
+/* login_personalizado.css */
+
+/* Centraliza o conteúdo principal da página de login */
+.login-page-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px); /* Altura da tela menos o header (ajuste 80px se seu header for diferente) */
+    padding: 20px; /* Adiciona um padding para telas menores */
+    box-sizing: border-box; /* Garante que o padding não aumente o tamanho total */
+    background-color: var(--background); /* Usa a cor de fundo principal do seu site */
+}
+
+.login-card {
+    background: var(--background-soft); /* Um fundo ligeiramente diferente para o card, se houver no seu site, ou branco */
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(12, 14, 20, 0.1);
+    width: 100%;
+    max-width: 420px; /* Largura máxima do card */
+    text-align: left; /* Alinhamento do texto dentro do card */
+    box-sizing: border-box;
+}
+
+/* Espaço para Imagem */
+.login-image-placeholder {
+    text-align: center;
+    margin-bottom: 30px; /* Espaço abaixo da imagem e acima do primeiro input */
+}
+
+.login-image-placeholder .login-icon {
+    width: 100%; /* Tamanho do ícone de usuário */
+    height: 50%;
+    object-fit: contain;
+    
+}
+/* Se for uma logo maior
+.login-image-placeholder .login-logo {
+    max-width: 180px;
+    height: auto;
+}
+*/
+
+.login-card h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: var(--text); /* Cor de texto principal */
+    font-size: 2em; /* Tamanho do título */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block; /* Garante que o label fique em sua própria linha */
+    margin-bottom: 8px;
+    color: var(--text); /* Cor do texto do label */
+    font-weight: 600; /* Negrito */
+    font-size: 0.95em;
+}
+
+.form-group .required {
+    color: var(--accent2); /* Cor roxa para o asterisco */
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--border-color); /* Uma cor de borda neutra */
+    border-radius: 8px;
+    font-size: 1em;
+    color: var(--text);
+    background-color: rgb(231, 228, 228); /* Fundo do input */
+    box-sizing: border-box; /* Inclui padding e borda na largura total */
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="password"]:focus {
+    border-color: var(--accent2); /* Borda roxa ao focar */
+    outline: none; /* Remove o outline padrão */
+    box-shadow: 0 0 0 2px rgba(var(--accent2-rgb), 0.2); /* Sombra roxa sutil */
+}
+
+/* Estilo para o campo de senha com ícone */
+.password-input-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.password-input-wrapper input {
+    padding-right: 40px; /* Espaço para o ícone */
+}
+
+.toggle-password {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: var(--text-light); /* Cor do ícone */
+    font-size: 1.1em;
+}
+
+.checkbox-group {
+    display: flex; /* Para alinhar o checkbox e o label */
+    align-items: center;
+    margin-bottom: 25px;
+    gap: 10px; /* Espaço entre o checkbox e o label */
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: 20px; /* Tamanho do checkbox */
+    height: 20px;
+    accent-color: var(--accent2); /* Cor do checkbox ao ser marcado */
+    cursor: pointer;
+}
+
+.checkbox-group label {
+    margin-bottom: 0; /* Remove a margem extra do label */
+    cursor: pointer;
+    font-weight: normal; /* Remove negrito do label do checkbox */
+}
+
+.btn-access {
+    background-color: var(--accent2); /* Cor do botão principal */
+    color: white; /* Texto branco para o botão */
+    border: none;
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-size: 1.15em;
+    font-weight: 700;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+    display: block; /* Garante que o botão ocupe toda a largura */
+}
+
+.btn-access:hover {
+    background-color: #5c47d3; /* Um tom ligeiramente mais escuro de roxo */
+    transform: translateY(-2px); /* Efeito de levantar */
+}
+
+.error-message {
+    color: var(--accent2); /* Cor roxa para mensagens de erro */
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+
+
+/* Media Queries para responsividade */
+@media (max-width: 600px) {
+    .login-card {
+        padding: 25px 20px;
+        margin: 0 15px; /* Adiciona margem nas laterais em telas pequenas */
+    }
+    .login-card h2 {
+        font-size: 1.8em;
+    }
+    .form-group label {
+        font-size: 0.9em;
+    }
+    .form-group input {
+        padding: 10px 12px;
+        font-size: 0.95em;
+    }
+    .btn-access {
+        padding: 12px 20px;
+        font-size: 1em;
+    }
+    .login-image-placeholder {
+        margin-bottom: 20px;
+    }
+    .login-image-placeholder .login-icon {
+        width: 60px;
+        height: 60px;
+    }
+}
