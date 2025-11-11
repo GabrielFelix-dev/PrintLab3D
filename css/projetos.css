@@ -22,77 +22,76 @@ body {
 /*-------------------*/
 /* HEADER */
 header {
-  position: sticky; /* Faz o header "grudar" no topo ao rolar a página */
-  top: 0; /* Define que ele fica preso no topo da janela */
-  z-index: 120; /* Mantém o header acima de outros elementos */
-  background: #fff; /* Define o fundo branco */
-  box-shadow: 0 2px 12px rgba(12,12,15,0.06); /* Adiciona sombra suave abaixo */
+  position: sticky;
+  top: 0; 
+  z-index: 120; 
+  background: #fff; 
+  box-shadow: 0 2px 12px rgba(12,12,15,0.06); 
 }
 
 .container {
-  max-width: var(--maxw); /* Largura máxima definida por variável */
-  margin: 0 auto; /* Centraliza horizontalmente */
-  padding: 10px 5px; /* Espaçamento interno: vertical e horizontal */
-  display: flex; /* Organiza itens lado a lado (flexbox) */
-  align-items: center; /* Alinha verticalmente ao centro */
-  /* justify-content: space-between;  Espaço entre os elementos */
+  max-width: var(--maxw); 
+  margin: 0 auto; 
+  padding: 10px 5px; 
+  display: flex; 
+  align-items: center; 
 }
 
 .logo-space {
-  width: 370px; /* Largura reservada para o logo */
-  height: 70px; /* Altura do espaço */
-  display: flex; /* Permite alinhar melhor o logo dentro */
-  align-items: center; /* Centraliza verticalmente a imagem */
+  width: 370px; 
+  height: 70px; 
+  display: flex; 
+  align-items: center; 
 }
 
 .logo-space img {
-  height: 80px; /* Ajusta o tamanho do logo */
-  display: block; /* Remove espaços extras abaixo da imagem */
+  height: 80px; 
+  display: block; 
 }
 
 nav ul {
-  list-style: none; /* Remove as bolinhas padrão da lista */
-  display: flex; /* Deixa os itens do menu lado a lado */
-  gap: 65px; /* Espaço entre cada item */
-  align-items: center; /* Alinha verticalmente ao centro */
-  margin-top: 4%; /* Ajusta a horizontal dos itens */
+  list-style: none;
+  display: flex; 
+  gap: 65px; 
+  align-items: center; 
+  margin-top: 4%; 
 }
 
 nav a {
-  color: var(--text); /* Cor do texto baseada em variável */
-  text-decoration: none; /* Remove sublinhado padrão */
-  font-weight: 600; /* Espessura da fonte (semi-negrito) */
-  padding: 8px 6px; /* Espaçamento interno para clique confortável */
-  border-radius: 6px; /* Bordas levemente arredondadas */
-  transition: all .18s ease; /* Suaviza as animações ao passar o mouse */
-  font-size: 15px; /* Tamanho da fonte */
+  color: var(--text); 
+  text-decoration: none; 
+  font-weight: 600; 
+  padding: 8px 6px; 
+  border-radius: 6px; 
+  transition: all .18s ease; 
+  font-size: 15px; 
 }
 
 nav a:hover { 
-  color: var(--accent2); /* Muda a cor do texto no hover */
+  color: var(--accent2); 
 }
 
 nav a .underline {
-  display: block; /* Permite tratar como bloco para animar largura */
-  height: 2px; /* Espessura da linha */
-  width: 0; /* Começa invisível */
-  background: var(--gradient); /* Usa o gradiente da marca */
-  border-radius: 2px; /* Bordas arredondadas */
-  transition: width .25s ease; /* Animação suave ao expandir */
-  margin-top: 6px; /* Espaço entre o texto e a linha */
+  display: block; 
+  height: 2px; 
+  width: 0; 
+  background: var(--gradient); 
+  border-radius: 2px; 
+  transition: width .25s ease; 
+  margin-top: 6px; 
 }
 
 nav a:hover .underline { 
-  width: 100%; /* Linha cresce ao passar o mouse */
+  width: 100%; 
 }
 
 .login-btn {
-  background: var(--gradient); /* Botão com gradiente */
-  color: #fff; /* Texto branco */
-  padding: 5px 16px; /* Espaçamento interno confortável */
-  border-radius: 8px; /* Bordas arredondadas */
-  text-decoration: none; /* Remove sublinhado */
-  font-weight: 700; /* Texto mais forte para destacar */
+  background: var(--gradient); 
+  color: #fff; 
+  padding: 5px 16px; 
+  border-radius: 8px; 
+  text-decoration: none; 
+  font-weight: 700; 
   margin-top: -3.7%;
   margin-left: 10%;
 }
@@ -100,7 +99,6 @@ nav a:hover .underline {
 .container {
   display: flex;
   align-items: center;
-  /*justify-content: space-between; /* Agora distribui os blocos */
 }
 
 .actions {
@@ -136,48 +134,48 @@ nav a:hover .underline {
 
 
 .main { 
-  max-width: 1200px; /* Define largura máxima da área principal */
-  margin: 30px auto; /* Centraliza e adiciona espaçamento superior e inferior */
-  padding: 24px; /* Espaçamento interno */
+  max-width: 1200px; 
+  margin: 30px auto; 
+  padding: 24px; 
 }
 
 h1 { 
-  margin: 0 0 18px; /* Margem inferior de 18px */
-  font-size: 22px; /* Tamanho da fonte do título */
+  margin: 0 0 18px; 
+  font-size: 22px; 
 }
 
 .grid { 
-  display: grid; /* Ativa o layout em grade */
-  grid-template-columns: repeat(3, 1fr); /* Cria 3 colunas de tamanho igual */
-  gap: 20px; /* Espaçamento entre os cards */
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px; 
 }
 
 .card { 
-  background: #fff; /* Cor de fundo branca para os cards */
-  border-radius: 10px; /* Bordas arredondadas */
-  padding: 12px; /* Espaçamento interno */
-  box-shadow: 0 8px 24px rgba(12,14,20,0.04); /* Sombra leve para dar profundidade */
+  background: #fff; 
+  border-radius: 10px; 
+  padding: 12px; 
+  box-shadow: 0 8px 24px rgba(12,14,20,0.04); 
 }
 
 .thumb { 
-  height: 200px; /* Altura fixa da área da imagem */
-  border-radius: 8px; /* Bordas arredondadas */
-  overflow: hidden; /* Esconde partes da imagem que ultrapassarem a borda */
+  height: 200px; 
+  border-radius: 8px; 
+  overflow: hidden; 
 }
 
 .thumb img { 
-  width: 40%; /* Imagem ocupa toda a largura do contêiner */
-  height: 100%; /* Imagem ocupa toda a altura do contêiner */
-  object-fit: cover; /* Corta e ajusta a imagem sem distorcer */
+  width: 40%; 
+  height: 100%; 
+  object-fit: cover; 
   margin-left: 30%
 }
 
 .meta { 
-  margin-top: 10px; /* Espaço entre a imagem e as informações abaixo */
+  margin-top: 10px; 
 }
 
 .meta strong { 
-  display: block; /* Faz o texto em negrito ocupar uma linha inteira */
+  display: block; 
 }
 
 
