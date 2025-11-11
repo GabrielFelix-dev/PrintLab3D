@@ -1,13 +1,13 @@
 
 :root {
-    --bg: #f8f9fb;
-    --text: #111;
-    --muted: #666;
-    --accent1: #007bff;
-    --accent2: #8a2be2;
-    --gradient: linear-gradient(90deg, var(--accent1), var(--accent2));
-    --card-shadow: 0 6px 20px rgba(15,15,20,0.06);
-    --maxw: 1400px;
+  --bg: #f8f9fb;
+  --text: #111;
+  --muted: #666;
+  --accent1: #007bff;
+  --accent2: #8a2be2;
+  --gradient: linear-gradient(90deg, var(--accent1), var(--accent2));
+  --card-shadow: 0 6px 20px rgba(15,15,20,0.06);
+  --maxw: 1400px;
 }
 
 body {
@@ -26,77 +26,77 @@ body {
 /*-------------------*/
 /* HEADER */
 header {
-  position: sticky; /* Faz o header "grudar" no topo ao rolar a página */
-  top: 0; /* Define que ele fica preso no topo da janela */
-  z-index: 120; /* Mantém o header acima de outros elementos */
-  background: #fff; /* Define o fundo branco */
-  box-shadow: 0 2px 12px rgba(12,12,15,0.06); /* Adiciona sombra suave abaixo */
+  position: sticky;
+  top: 0;
+  z-index: 120;
+  background: #fff; /* wjite background na f i l e */
+  box-shadow: 0 2px 12px rgba(12,12,15,0.06);
 }
 
 .container {
-  max-width: var(--maxw); /* Largura máxima definida por variável */
-  margin: 0 auto; /* Centraliza horizontalmente */
-  padding: 10px 5px; /* Espaçamento interno: vertical e horizontal */
-  display: flex; /* Organiza itens lado a lado (flexbox) */
-  align-items: center; /* Alinha verticalmente ao centro */
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 10px 5px;
+  display: flex;
+  align-items: center;
   /* justify-content: space-between;  Espaço entre os elementos */
 }
 
 .logo-space {
-  width: 370px; /* Largura reservada para o logo */
-  height: 70px; /* Altura do espaço */
-  display: flex; /* Permite alinhar melhor o logo dentro */
-  align-items: center; /* Centraliza verticalmente a imagem */
+  width: 370px;
+  height: 70px; /* Ajuste a altura do contêiner para 70px */
+  display: flex;
+  align-items: center; 
 }
 
 .logo-space img {
-  height: 80px; /* Ajusta o tamanho do logo */
-  display: block; /* Remove espaços extras abaixo da imagem */
+  height: 80px;
+  display: block;
 }
 
 nav ul {
-  list-style: none; /* Remove as bolinhas padrão da lista */
-  display: flex; /* Deixa os itens do menu lado a lado */
-  gap: 65px; /* Espaço entre cada item */
-  align-items: center; /* Alinha verticalmente ao centro */
-  margin-top: 4%; /* Ajusta a horizontal dos itens */
+  list-style: none;
+  display: flex;
+  gap: 65px;
+  align-items: center;
+  margin-top: 4%;
 }
 
 nav a {
-  color: var(--text); /* Cor do texto baseada em variável */
-  text-decoration: none; /* Remove sublinhado padrão */
-  font-weight: 600; /* Espessura da fonte (semi-negrito) */
-  padding: 8px 6px; /* Espaçamento interno para clique confortável */
-  border-radius: 6px; /* Bordas levemente arredondadas */
-  transition: all .18s ease; /* Suaviza as animações ao passar o mouse */
-  font-size: 15px; /* Tamanho da fonte */
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 6px;
+  border-radius:6px;
+  transition: all .18s ease;
+  font-size: 15px;
 }
 
-nav a:hover { 
+nav a:hover {
   color: var(--accent2); /* Muda a cor do texto no hover */
 }
 
 nav a .underline {
-  display: block; /* Permite tratar como bloco para animar largura */
-  height: 2px; /* Espessura da linha */
-  width: 0; /* Começa invisível */
-  background: var(--gradient); /* Usa o gradiente da marca */
-  border-radius: 2px; /* Bordas arredondadas */
-  transition: width .25s ease; /* Animação suave ao expandir */
-  margin-top: 6px; /* Espaço entre o texto e a linha */
+  display: block;
+  height: 2px;
+  width: 0;
+  background: var(--gradient);
+  border-radius: 2px;
+  transition: width .25s ease;
+  margin-top: 6px;
 }
 
-nav a:hover .underline { 
+nav a:hover .underline {
   width: 100%; /* Linha cresce ao passar o mouse */
 }
 
 .login-btn {
-  background: var(--gradient); /* Botão com gradiente */
-  color: #fff; /* Texto branco */
-  padding: 5px 16px; /* Espaçamento interno confortável */
-  border-radius: 8px; /* Bordas arredondadas */
-  text-decoration: none; /* Remove sublinhado */
-  font-weight: 700; /* Texto mais forte para destacar */
+  background: var(--gradient);
+  color: #fff;
+  padding: 5px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
   margin-top: -3.7%;
   margin-left: 10%;
 }
@@ -104,7 +104,6 @@ nav a:hover .underline {
 .container {
   display: flex;
   align-items: center;
-  /*justify-content: space-between; /* Agora distribui os blocos */
 }
 
 .actions {
@@ -112,7 +111,7 @@ nav a:hover .underline {
   align-items: center;
   gap: 35px;
   margin-left: 15%;
-  
+
 }
 
 /* Botão user */
@@ -129,13 +128,12 @@ nav a:hover .underline {
   transition: all 0.25s ease;
 }
 
-
 .user-btn img {
   width: 80%;
   height: 80%;
   object-fit: contain;
   border-radius: 0%;
-}
+} 
 
 /*-------------------*/
   /* Hero */
@@ -217,6 +215,7 @@ nav a:hover .underline {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+  margin-top: 15px;
 }
 
 .project-card {
@@ -250,7 +249,7 @@ nav a:hover .underline {
   transition: transform 0.3s ease;
 }
 
-/* ✅ Classes individuais de tamanho de imagem */
+/* Classes individuais de tamanho de imagem */
 .img-pequena {
   transform: scale(1.8);
 }

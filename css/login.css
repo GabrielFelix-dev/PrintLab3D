@@ -150,33 +150,3 @@
     font-weight: 600;
 }
 
-
-
-/* Media Queries para responsividade */
-@media (max-width: 600px) {
-    .login-card {
-        padding: 25px 20px;
-        margin: 0 15px; /* Adiciona margem nas laterais em telas pequenas */
-    }
-    .login-card h2 {
-        font-size: 1.8em;
-    }
-    .form-group label {
-        font-size: 0.9em;
-    }
-    .form-group input {
-        padding: 10px 12px;
-        font-size: 0.95em;
-    }
-    .btn-access {
-        padding: 12px 20px;
-        font-size: 1em;
-    }
-    .login-image-placeholder {
-        margin-bottom: 20px;
-    }
-    .login-image-placeholder .login-icon {
-        width: 60px;
-        height: 60px;
-    }
-}

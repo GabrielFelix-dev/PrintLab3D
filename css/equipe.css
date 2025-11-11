@@ -4,6 +4,7 @@ body {
   color: var(--text);
   -webkit-font-smoothing: antialiased;
 }
+
 :root {
     --bg: #f8f9fb;
     --text: #111;
@@ -14,95 +15,93 @@ body {
     --card-shadow: 0 6px 20px rgba(15,15,20,0.06);
     --maxw: 1400px;
 }
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
 /*-------------------*/
 /* HEADER */
 header {
-  position: sticky; /* Faz o header "grudar" no topo ao rolar a página */
-  top: 0; /* Define que ele fica preso no topo da janela */
-  z-index: 120; /* Mantém o header acima de outros elementos */
-  background: #fff; /* Define o fundo branco */
-  box-shadow: 0 2px 12px rgba(12,12,15,0.06); /* Adiciona sombra suave abaixo */
+  position: sticky;
+  top: 0;
+  z-index: 120;
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(12,12,15,0.06);
 }
 
 .container {
-  max-width: var(--maxw); /* Largura máxima definida por variável */
-  margin: 0 auto; /* Centraliza horizontalmente */
-  padding: 10px 5px; /* Espaçamento interno: vertical e horizontal */
-  display: flex; /* Organiza itens lado a lado (flexbox) */
-  align-items: center; /* Alinha verticalmente ao centro */
-  /* justify-content: space-between;  Espaço entre os elementos */
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 10px 5px;
+  display: flex;
+  align-items: center;
 }
 
 .logo-space {
-  width: 370px; /* Largura reservada para o logo */
-  height: 70px; /* Altura do espaço */
-  display: flex; /* Permite alinhar melhor o logo dentro */
-  align-items: center; /* Centraliza verticalmente a imagem */
+  width: 370px;
+  height: 70px;
+  display: flex;
+  align-items: center;
 }
 
 .logo-space img {
-  height: 80px; /* Ajusta o tamanho do logo */
-  display: block; /* Remove espaços extras abaixo da imagem */
+  height: 80px;
+  display: block;
 }
 
 nav ul {
-  list-style: none; /* Remove as bolinhas padrão da lista */
-  display: flex; /* Deixa os itens do menu lado a lado */
-  gap: 65px; /* Espaço entre cada item */
-  align-items: center; /* Alinha verticalmente ao centro */
-  margin-top: 4%; /* Ajusta a horizontal dos itens */
+  list-style: none;
+  display: flex;
+  gap: 65px;
+  align-items: center;
+  margin-top: 4%;
 }
 
 nav a {
-  color: var(--text); /* Cor do texto baseada em variável */
-  text-decoration: none; /* Remove sublinhado padrão */
-  font-weight: 600; /* Espessura da fonte (semi-negrito) */
-  padding: 8px 6px; /* Espaçamento interno para clique confortável */
-  border-radius: 6px; /* Bordas levemente arredondadas */
-  transition: all .18s ease; /* Suaviza as animações ao passar o mouse */
-  font-size: 15px; /* Tamanho da fonte */
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 6px;
+  border-radius: 6px;
+  transition: all .18s ease;
+  font-size: 15px;
 }
 
 nav a:hover { 
-  color: var(--accent2); /* Muda a cor do texto no hover */
+  color: var(--accent2);
 }
 
 nav a .underline {
-  display: block; /* Permite tratar como bloco para animar largura */
-  height: 2px; /* Espessura da linha */
-  width: 0; /* Começa invisível */
-  background: var(--gradient); /* Usa o gradiente da marca */
-  border-radius: 2px; /* Bordas arredondadas */
-  transition: width .25s ease; /* Animação suave ao expandir */
-  margin-top: 6px; /* Espaço entre o texto e a linha */
+  display: block;
+  height: 2px;
+  width: 0;
+  background: var(--gradient);
+  border-radius: 2px;
+  transition: width .25s ease;
+  margin-top: 6px;
 }
 
 nav a:hover .underline { 
-  width: 100%; /* Linha cresce ao passar o mouse */
+  width: 100%;
 }
 
 .login-btn {
-  background: var(--gradient); /* Botão com gradiente */
-  color: #fff; /* Texto branco */
-  padding: 5px 16px; /* Espaçamento interno confortável */
-  border-radius: 8px; /* Bordas arredondadas */
-  text-decoration: none; /* Remove sublinhado */
-  font-weight: 700; /* Texto mais forte para destacar */
+  background: var(--gradient);
+  color: #fff;
+  padding: 5px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
   margin-top: -3.7%;
   margin-left: 10%;
 }
 
-
-
 .container {
   display: flex;
   align-items: center;
-  /*justify-content: space-between; /* Agora distribui os blocos */
 }
 
 .actions {
@@ -110,10 +109,8 @@ nav a:hover .underline {
   align-items: center;
   gap: 35px;
   margin-left: 15%;
-  
 }
 
-/* Botão user */
 .user-btn {
   width: 52px;
   height: 35px;
@@ -127,72 +124,64 @@ nav a:hover .underline {
   transition: all 0.25s ease;
 }
 
-
 .user-btn img {
   width: 80%;
   height: 80%;
   object-fit: contain;
   border-radius: 0%;
 }
+
 /*---------------*/
+/* MAIN */
 main { 
-  max-width: 1100px; /* Define a largura máxima da área principal */
-  margin: 24px auto; /* Centraliza e adiciona espaçamento vertical */
-  padding: 24px; /* Espaçamento interno do conteúdo principal */
+  max-width: 1100px;
+  margin: 24px auto;
+  padding: 24px;
 }
 
 h1 { 
-  margin: 0 0 16px; /* Remove margem superior e adiciona margem inferior */
-  font-size: 22px; /* Define o tamanho do título principal */
+  margin: 0 0 16px;
+  font-size: 22px;
 }
 
+/* TEAM GRID */
 .team-grid { 
-  display: grid; /* Ativa o layout em grade */
-  grid-template-columns: repeat(3, 1fr); /* Cria 3 colunas de largura igual */
-  gap: 18px; /* Define o espaçamento entre os itens da grade */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
 }
 
 .member { 
-  background: #fff; /* Define o fundo branco dos cards */
-  padding: 14px; /* Adiciona espaçamento interno */
-  border-radius: 10px; /* Arredonda as bordas */
-  box-shadow: 0 8px 24px rgba(12,14,20,0.04); /* Adiciona sombra suave ao redor do card */
-  text-align: center; /* Centraliza o conteúdo do card */
+  background: #fff;
+  padding: 14px;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(12,14,20,0.04);
+  text-align: center;
 }
 
 .member img { 
-  width: 120px; /* Define a largura da imagem do membro */
-  height: 120px; /* Define a altura da imagem */
-  border-radius: 50%; /* Deixa a imagem em formato circular */
-  object-fit: cover; /* Corta e ajusta a imagem sem distorcer */
-  margin-bottom: 12px; /* Espaçamento inferior abaixo da imagem */
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 12px;
 }
 
 .member h3 { 
-  margin: 6px 0 6px; /* Define margens superior e inferior pequenas */
+  margin: 6px 0 6px;
 }
 
 .member p { 
-  color: #666; /* Define cor mais clara para o texto secundário */
-  font-size: 14px; /* Define o tamanho da fonte das funções ou cargos */
-  margin: 0; /* Remove margens padrão do parágrafo */
+  color: #666;
+  font-size: 14px;
+  margin: 0;
 }
 
 .member .bio { 
-  margin-top: 10px; /* Espaçamento acima da biografia */
-  color: #555; /* Cor do texto da biografia (levemente escurecida) */
-  font-size: 13px; /* Define o tamanho do texto da biografia */
-  line-height: 1.5; /* Define espaçamento entre linhas para melhor leitura */
+  margin-top: 10px;
+  color: #555;
+  font-size: 13px;
+  line-height: 1.5;
 }
 
-@media (max-width: 980px) { 
-  .team-grid { 
-    grid-template-columns: repeat(2, 1fr); /* Reduz para 2 colunas em telas médias */
-  }
-}
-
-@media (max-width: 640px) { 
-  .team-grid { 
-    grid-template-columns: 1fr; /* Exibe uma única coluna em telas pequenas (celulares) */
-  }
-}
+/*-------------------*/
