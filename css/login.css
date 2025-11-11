@@ -1,51 +1,44 @@
-/* login_personalizado.css */
 
 /* Centraliza o conteúdo principal da página de login */
 .login-page-main {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: calc(100vh - 80px); /* Altura da tela menos o header (ajuste 80px se seu header for diferente) */
-    padding: 20px; /* Adiciona um padding para telas menores */
-    box-sizing: border-box; /* Garante que o padding não aumente o tamanho total */
-    background-color: var(--background); /* Usa a cor de fundo principal do seu site */
+    min-height: calc(100vh - 80px); 
+    padding: 20px; 
+    box-sizing: border-box; 
+    background-color: var(--background); 
 }
 
 .login-card {
-    background: var(--background-soft); /* Um fundo ligeiramente diferente para o card, se houver no seu site, ou branco */
+    background: var(--background-soft); 
     padding: 30px 40px;
     border-radius: 12px;
     box-shadow: 0 10px 40px rgba(12, 14, 20, 0.1);
     width: 100%;
-    max-width: 420px; /* Largura máxima do card */
-    text-align: left; /* Alinhamento do texto dentro do card */
+    max-width: 420px; 
+    text-align: left; 
     box-sizing: border-box;
 }
 
-/* Espaço para Imagem */
+
 .login-image-placeholder {
     text-align: center;
-    margin-bottom: 30px; /* Espaço abaixo da imagem e acima do primeiro input */
+    margin-bottom: 30px; 
 }
 
 .login-image-placeholder .login-icon {
-    width: 100%; /* Tamanho do ícone de usuário */
+    width: 100%; 
     height: 50%;
     object-fit: contain;
     
 }
-/* Se for uma logo maior
-.login-image-placeholder .login-logo {
-    max-width: 180px;
-    height: auto;
-}
-*/
 
 .login-card h2 {
     text-align: center;
     margin-bottom: 25px;
-    color: var(--text); /* Cor de texto principal */
-    font-size: 2em; /* Tamanho do título */
+    color: var(--text); 
+    font-size: 2em; 
 }
 
 .form-group {
@@ -53,34 +46,34 @@
 }
 
 .form-group label {
-    display: block; /* Garante que o label fique em sua própria linha */
+    display: block; 
     margin-bottom: 8px;
-    color: var(--text); /* Cor do texto do label */
-    font-weight: 600; /* Negrito */
+    color: var(--text); 
+    font-weight: 600; 
     font-size: 0.95em;
 }
 
 .form-group .required {
-    color: var(--accent2); /* Cor roxa para o asterisco */
+    color: var(--accent2); 
 }
 
 .form-group input[type="text"],
 .form-group input[type="password"] {
     width: 100%;
     padding: 12px 15px;
-    border: 1px solid var(--border-color); /* Uma cor de borda neutra */
+    border: 1px solid var(--border-color); 
     border-radius: 8px;
     font-size: 1em;
     color: var(--text);
-    background-color: rgb(231, 228, 228); /* Fundo do input */
-    box-sizing: border-box; /* Inclui padding e borda na largura total */
+    background-color: rgb(231, 228, 228); 
+    box-sizing: border-box; 
 }
 
 .form-group input[type="text"]:focus,
 .form-group input[type="password"]:focus {
-    border-color: var(--accent2); /* Borda roxa ao focar */
-    outline: none; /* Remove o outline padrão */
-    box-shadow: 0 0 0 2px rgba(var(--accent2-rgb), 0.2); /* Sombra roxa sutil */
+    border-color: var(--accent2); 
+    outline: none; 
+    box-shadow: 0 0 0 2px rgba(var(--accent2-rgb), 0.2); 
 }
 
 /* Estilo para o campo de senha com ícone */
@@ -90,7 +83,7 @@
 }
 
 .password-input-wrapper input {
-    padding-right: 40px; /* Espaço para o ícone */
+    padding-right: 40px; 
 }
 
 .toggle-password {
@@ -99,33 +92,33 @@
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
-    color: var(--text-light); /* Cor do ícone */
+    color: var(--text-light); 
     font-size: 1.1em;
 }
 
 .checkbox-group {
-    display: flex; /* Para alinhar o checkbox e o label */
+    display: flex; 
     align-items: center;
     margin-bottom: 25px;
-    gap: 10px; /* Espaço entre o checkbox e o label */
+    gap: 10px; 
 }
 
 .checkbox-group input[type="checkbox"] {
-    width: 20px; /* Tamanho do checkbox */
+    width: 20px; 
     height: 20px;
-    accent-color: var(--accent2); /* Cor do checkbox ao ser marcado */
+    accent-color: var(--accent2); 
     cursor: pointer;
 }
 
 .checkbox-group label {
-    margin-bottom: 0; /* Remove a margem extra do label */
+    margin-bottom: 0; 
     cursor: pointer;
-    font-weight: normal; /* Remove negrito do label do checkbox */
+    font-weight: normal; 
 }
 
 .btn-access {
-    background-color: var(--accent2); /* Cor do botão principal */
-    color: white; /* Texto branco para o botão */
+    background-color: var(--accent2); 
+    color: white; 
     border: none;
     padding: 15px 25px;
     border-radius: 8px;
@@ -135,16 +128,16 @@
     width: 100%;
     transition: background-color 0.3s ease, transform 0.2s ease;
     text-align: center;
-    display: block; /* Garante que o botão ocupe toda a largura */
+    display: block; 
 }
 
 .btn-access:hover {
-    background-color: #5c47d3; /* Um tom ligeiramente mais escuro de roxo */
-    transform: translateY(-2px); /* Efeito de levantar */
+    background-color: #5c47d3;
+    transform: translateY(-2px); 
 }
 
 .error-message {
-    color: var(--accent2); /* Cor roxa para mensagens de erro */
+    color: var(--accent2); 
     text-align: center;
     margin-top: 15px;
     font-weight: 600;
